@@ -1,4 +1,4 @@
 # Simple Python program
 
 
-print("Hello,", name, "!")
+print("Hello")
