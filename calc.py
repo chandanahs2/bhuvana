@@ -1,14 +1,12 @@
-# Simple calculator
+# Number Guessing Game
 
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
+import random
 
-sum = num1 + num2
-difference = num1 - num2
-product = num1 * num2
-division = num1 / num2
+number = random.randint(1, 10)
 
-print("Sum:", sum)
-print("Difference:", difference)
-print("Product:", product)
-print("Division:", division)
+guess = int(input("Guess a number between 1 and 10: "))
+
+if guess == number:
+    print("You guessed it right!")
+else:
+    print("Wrong guess. The number was", number)
